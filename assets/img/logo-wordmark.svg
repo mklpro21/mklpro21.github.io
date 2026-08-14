@@ -1,0 +1,27 @@
+<svg width="1040" height="320" viewBox="0 0 1040 320" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Lazy Pro Trip wordmark</title>
+  <desc>Cleaned LPT wordmark: blue capitals L P T, muted grey remainder, dashed road through the P and a single blue stop pin, no drop shadow.</desc>
+  <defs>
+    <style>
+      .cap { font-family: "Baloo 2","Quicksand","Arial Rounded MT Bold","Segoe UI",sans-serif; font-weight: 700; font-size: 150px; }
+      .blue { fill: #2D9CFF; }
+      .grey { fill: #9aa3ad; }
+      .credit { font-family: "Segoe UI",sans-serif; font-weight: 600; font-size: 24px; fill: #2D9CFF; opacity: 0.85; }
+    </style>
+  </defs>
+
+  <text x="40" y="210" class="cap">
+    <tspan class="blue">L</tspan><tspan class="grey">azy</tspan><tspan class="blue" dx="34">P</tspan><tspan class="grey">ro</tspan><tspan class="blue" dx="34">T</tspan><tspan class="grey">rip</tspan>
+  </text>
+
+  <g stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-dasharray="14 18">
+    <line x1="468" y1="92" x2="468" y2="208"/>
+  </g>
+
+  <g>
+    <path d="M 468 92 C 446 70 446 40 468 40 C 490 40 490 70 468 92 Z" fill="#2D9CFF"/>
+    <circle cx="468" cy="58" r="9" fill="#ffffff"/>
+  </g>
+
+  <text x="996" y="270" text-anchor="end" class="credit">by MKLpro</text>
+</svg>

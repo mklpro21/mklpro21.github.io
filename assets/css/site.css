@@ -1,0 +1,486 @@
+/* ============================================================================
+   mklpro21.com — Lazy Pro Trip
+   Oblikovanje po filozofiji »Odometrična tišina« (design/OBLIKOVNA-FILOZOFIJA.md):
+   temno polje, ozka paleta, lasne črte, klinične oznake, ena gesta na odsek.
+   Pisavi Jura in Geist Mono gostujeta lokalno (SIL OFL) — brez zunanjih zahtevkov.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Jura";
+  src: url("/assets/fonts/Jura-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jura";
+  src: url("/assets/fonts/Jura-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GeistMono";
+  src: url("/assets/fonts/GeistMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --bg: #080b10;
+  --bg-2: #0b0f16;
+  --surface: #10151e;
+  --surface-2: #141b26;
+  --line: #1a2230;
+  --line-2: #26303f;
+  --text: #dfe9f6;
+  --muted: #8394a8;
+  --dim: #4f5d70;
+  --blue: #2d9cff;
+  --blue-pale: #96c8ff;
+
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --display: "Jura", var(--sans);
+  --mono: "GeistMono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --wrap: 1180px;
+  --gutter: 32px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.68;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img, svg { max-width: 100%; display: block; }
+a { color: var(--blue-pale); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* ---------------------------------------------------------------- oznake ---
+   Klinična oznaka: majhna, razmaknjena, monospace. Označuje, ne razlaga. */
+
+.tag {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 18px;
+}
+.tag .n { color: var(--blue); }
+
+/* ---------------------------------------------------------------- glava --- */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: rgba(8, 11, 16, 0.86);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner { display: flex; align-items: center; gap: 30px; height: 72px; }
+.nav-logo { flex-shrink: 0; }
+/* width:auto je nujen — atribut width v HTML sicer razpotegne znak v flexu */
+.nav-logo img { height: 24px; width: auto; max-width: none; }
+.nav-logo:hover { text-decoration: none; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.nav-links a { color: var(--muted); }
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+
+.lang { display: flex; align-items: center; gap: 8px; color: var(--dim); }
+.lang a { color: var(--dim); }
+.lang a.on { color: var(--blue-pale); }
+
+/* ---------------------------------------------------------------- gumbi --- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 1px solid var(--blue);
+  border-radius: 2px;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue-pale);
+  background: transparent;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  cursor: pointer;
+}
+.btn:hover { background: var(--blue); color: #05121f; text-decoration: none; }
+
+.btn-solid { background: var(--blue); color: #05121f; }
+.btn-solid:hover { background: var(--blue-pale); border-color: var(--blue-pale); }
+
+.btn-quiet { border-color: var(--line-2); color: var(--muted); }
+.btn-quiet:hover { background: transparent; border-color: var(--muted); color: var(--text); }
+
+.btn-sm { padding: 10px 18px; font-size: 11px; }
+
+/* ---------------------------------------------------------------- hero --- */
+
+.hero { position: relative; padding: 120px 0 130px; overflow: hidden; }
+
+/* Sled iz lista »Odometrična tišina« teče za napravo — ista krivulja, ista gesta. */
+.hero-trace {
+  position: absolute;
+  top: -260px;
+  left: 50%;
+  transform: translateX(-8%);
+  width: min(900px, 70vw);
+  height: 1360px;
+  opacity: 0.34;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse 62% 52% at 62% 42%, #000 38%, transparent 76%);
+  -webkit-mask-image: radial-gradient(ellipse 62% 52% at 62% 42%, #000 38%, transparent 76%);
+}
+
+.hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 70px;
+  align-items: center;
+}
+
+h1 {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: clamp(40px, 5.6vw, 68px);
+  line-height: 1.1;
+  letter-spacing: 0.005em;
+  margin: 0 0 26px;
+}
+h1 em { font-style: normal; color: var(--blue-pale); }
+
+.lede {
+  margin: 0 0 38px;
+  max-width: 33em;
+  font-size: 18.5px;
+  color: var(--muted);
+}
+
+.actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+
+.hero-note {
+  margin-top: 26px;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+/* ---------------------------------------------------------------- odseki --- */
+
+.section { padding: 110px 0; border-top: 1px solid var(--line); }
+.section-tight { padding: 84px 0; }
+
+h2 {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: clamp(30px, 3.6vw, 44px);
+  line-height: 1.14;
+  margin: 0 0 20px;
+}
+
+h3 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  margin: 0 0 10px;
+}
+
+.section-head { max-width: 620px; margin-bottom: 64px; }
+.section-head p { margin: 0; color: var(--muted); font-size: 18px; }
+
+/* koraki */
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); }
+.step { background: var(--bg); padding: 40px 34px 44px; }
+.step .num {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: 42px;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 22px;
+}
+.step p { margin: 0; color: var(--muted); font-size: 16.5px; }
+
+/* funkcija: besedilo + posnetek */
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 96px 0;
+  border-top: 1px solid var(--line);
+}
+.feature:first-of-type { border-top: none; padding-top: 0; }
+.feature.rev .ftext { order: 2; }
+.ftext p { color: var(--muted); font-size: 17.5px; margin: 0; }
+
+.ticks { list-style: none; margin: 28px 0 0; padding: 0; }
+.ticks li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 13px;
+  color: var(--muted);
+  font-size: 16.5px;
+}
+.ticks li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 12px;
+  height: 1px;
+  background: var(--blue);
+}
+.ticks strong { color: var(--text); font-weight: 600; }
+
+/* ---------------------------------------------------------------- naprava ---
+   Okvir je tanek: posnetek je že cel zaslon, zato ga ne posnemamo še enkrat. */
+
+.device {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  aspect-ratio: 1170 / 2532;
+  border-radius: 40px;
+  padding: 6px;
+  background: linear-gradient(160deg, #202a38, #0d1117 46%, #1b2432);
+  box-shadow: 0 50px 90px -40px rgba(0, 0, 0, 0.95);
+}
+.device-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 34px;
+  overflow: hidden;
+  background: var(--bg-2);
+}
+.device-screen img { width: 100%; height: 100%; object-fit: cover; }
+.device-lg { max-width: 330px; }
+
+.caption {
+  margin: 18px auto 0;
+  max-width: 300px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dim);
+  text-align: center;
+}
+
+/* širši posnetek */
+.wide {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--bg-2);
+}
+.wide img { width: 100%; height: auto; }
+
+/* ---------------------------------------------------------------- mreže --- */
+
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); }
+.cards.two { grid-template-columns: repeat(2, 1fr); }
+.card { background: var(--bg); padding: 38px 32px 40px; }
+.card p { margin: 0; color: var(--muted); font-size: 16.5px; }
+
+.trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.trio .device { max-width: 262px; }
+
+/* dve napravi drug ob drugem */
+.two-up { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.two-up .device { max-width: 228px; }
+
+/* ena naprava ob dveh širokih posnetkih */
+.split { display: grid; grid-template-columns: 300px 1fr; gap: 64px; align-items: start; }
+.stack { display: grid; gap: 44px; }
+.caption-l { max-width: none; text-align: left; margin-left: 0; }
+
+/* pas s kljukicami — odmev spodnjega merila z lista */
+.rule-ticks {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  height: 26px;
+  margin: 0 0 54px;
+  opacity: 0.85;
+}
+.rule-ticks i { display: block; width: 1px; background: var(--line-2); height: 8px; }
+.rule-ticks i:nth-child(5n + 1) { height: 18px; background: var(--dim); }
+.rule-ticks i.on { background: var(--blue); height: 22px; }
+
+/* poudarjen pas */
+.note {
+  padding: 38px 40px;
+  border: 1px solid var(--line-2);
+  border-left: 2px solid var(--blue);
+  background: var(--surface);
+}
+.note p { margin: 0; color: var(--muted); }
+
+/* druga aplikacija */
+.crossapp {
+  display: grid;
+  grid-template-columns: 116px 1fr auto;
+  gap: 34px;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.crossapp img { width: 116px; height: 116px; border-radius: 26px; }
+.crossapp p { margin: 0; color: var(--muted); }
+
+/* zaključni poziv */
+.cta { text-align: center; padding: 40px 0 0; }
+.cta h2 { margin-bottom: 18px; }
+.cta p { max-width: 46em; margin: 0 auto 36px; color: var(--muted); font-size: 18px; }
+.cta .fine {
+  margin-top: 32px;
+  max-width: 40em;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--dim);
+}
+
+/* dve platformi ob pozivu k preizkusu */
+.platforms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin: 52px auto 0;
+  max-width: 780px;
+  background: var(--line);
+  text-align: left;
+}
+.plat { background: var(--bg); padding: 26px 28px 28px; }
+.plat p { margin: 0; font-size: 15.5px; color: var(--muted); }
+.plat .tag { margin-bottom: 10px; }
+
+/* odometer — velika mirna številka */
+.odo {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: clamp(46px, 7vw, 92px);
+  letter-spacing: 0.08em;
+  color: var(--text);
+  line-height: 1;
+}
+
+/* ---------------------------------------------------------------- noga --- */
+
+.footer { padding: 56px 0 64px; border-top: 1px solid var(--line); }
+.footer-inner { display: flex; flex-wrap: wrap; gap: 28px; align-items: center; }
+.footer img { height: 20px; width: auto; max-width: none; opacity: 0.7; }
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.footer-links a { color: var(--muted); }
+.fine-print {
+  width: 100%;
+  margin: 22px 0 0;
+  font-size: 13px;
+  color: var(--dim);
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------------------- besedilo ---
+   Podpora in zasebnost: ista paleta, brez okrasja. */
+
+/* padding-top/bottom in ne shorthand — ta bi pobrisal stranski rob iz .wrap */
+.doc { max-width: 740px; padding-top: 72px; padding-bottom: 96px; }
+.doc h1 { font-size: clamp(32px, 4.6vw, 46px); margin-bottom: 12px; }
+.doc h2 {
+  font-size: 25px;
+  margin: 56px 0 14px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.doc h3 { font-size: 18px; margin: 34px 0 8px; }
+.doc p, .doc li { color: var(--muted); }
+.doc ul { padding-left: 20px; }
+.doc li { margin: 6px 0; }
+.doc strong { color: var(--text); font-weight: 600; }
+.doc hr { margin: 64px 0 0; border: 0; border-top: 1px solid var(--line); }
+.doc .lede { font-size: 18px; margin-bottom: 34px; }
+.doc .contact {
+  padding: 26px 30px;
+  border: 1px solid var(--line-2);
+  border-left: 2px solid var(--blue);
+  background: var(--surface);
+  margin: 30px 0 40px;
+}
+.doc .contact p { margin: 4px 0; }
+.doc .muted { color: var(--dim); font-size: 15px; }
+.doc footer {
+  margin-top: 64px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+/* ---------------------------------------------------------------- odzivnost --- */
+
+@media (max-width: 940px) {
+  .hero-grid, .feature { grid-template-columns: 1fr; gap: 54px; }
+  .feature.rev .ftext { order: 0; }
+  .steps, .cards, .cards.two, .trio, .split, .platforms { grid-template-columns: 1fr; }
+  .trio, .split { gap: 54px; }
+  .crossapp { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .hero-trace { display: none; }
+  .nav-links a.hide-sm { display: none; }
+}
+
+@media (max-width: 560px) {
+  :root { --gutter: 22px; }
+  body { font-size: 16px; }
+  .hero { padding: 76px 0 88px; }
+  .section { padding: 76px 0; }
+  .feature { padding: 64px 0; }
+  .step, .card { padding: 32px 26px 34px; }
+  .note, .crossapp { padding: 28px 24px; }
+  .footer-links { margin-left: 0; gap: 18px; }
+}
