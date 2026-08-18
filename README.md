@@ -21,6 +21,7 @@ assets/css/site.css   celotno oblikovanje, ena datoteka
 assets/fonts/         Jura in Geist Mono (SIL OFL) — gostujeta lokalno
 assets/img/shots/     posnetki zaslona, WebP
 design/               oblikovna filozofija in izhodiščni list
+docs/                 zapisi sej — kaj se je na strani spremenilo in zakaj
 CNAME                 mklpro21.com
 ```
 
@@ -52,6 +53,13 @@ deluje**, ker so poti do CSS in slik absolutne (`/assets/…`).
 Vsi posnetki so **prečiščeni**: imena strank, naslovi, e-pošta, davčna številka
 in registrske tablice so zamenjani z izmišljenimi. Zamenjave so dosledne — ista
 stranka ima na vseh zaslonih isto novo ime:
+
+🔴 **Spodnja tabela izniči prečiščevanje in je javna.** Ta repozitorij je javen,
+zato jo lahko kdor koli prebere — tudi prek `raw.githubusercontent.com` in iskanja
+po GitHubu — in vsak posnetek na strani prevede nazaj v prava imena in tablice.
+Smiselno jo je preseliti v zasebni repozitorij in tu pustiti samo postopek.
+⚠️ Odstranitev iz te datoteke je ne odstrani iz zgodovine gita. **Odločitev čaka**
+— glej `docs/SESJA-2026-08-18-MAC-NEMSKA-RAZLICICA.md`.
 
 | pravo | na strani |
 | --- | --- |
@@ -96,8 +104,8 @@ tabeli zgoraj:
 
 | posnetek | kaj je na njem |
 | --- | --- |
-| `IMG_0203`, `IMG_0221` | seznam strank — Žabjek d.o.o., Dobles, Starman, Tehimpex, Metaloprema, Tehnodom 2, Starles |
-| `IMG_0208`, `IMG_0225` | postanki in poti — McDonald's Celje, MERKUR Celje, MOL Rudnik, Trafika 3DVA **in zaseben stanovanjski naslov** |
+| `IMG_0203`, `IMG_0221` | seznam strank — sedem resničnih imen podjetij |
+| `IMG_0208`, `IMG_0225` | postanki in poti — štiri resnična podjetja z naslovi **in zaseben stanovanjski naslov** |
 | `IMG_0201` | nastavitve — oseben e-naslov v vrstici Cloud-Backup |
 | `IMG_0207` | izvirnik posnetka `30-de-aktivna-pot`, z nezabrisano tablico |
 
