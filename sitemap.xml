@@ -5,16 +5,50 @@
     <loc>https://mklpro21.com/</loc>
     <xhtml:link rel="alternate" hreflang="sl" href="https://mklpro21.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mklpro21.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mklpro21.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mklpro21.com/"/>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mklpro21.com/en/</loc>
     <xhtml:link rel="alternate" hreflang="sl" href="https://mklpro21.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mklpro21.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mklpro21.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mklpro21.com/"/>
     <priority>0.9</priority>
   </url>
-  <url><loc>https://mklpro21.com/pic-edit/</loc><priority>0.7</priority></url>
-  <url><loc>https://mklpro21.com/en/pic-edit/</loc><priority>0.7</priority></url>
+  <url>
+    <loc>https://mklpro21.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://mklpro21.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mklpro21.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mklpro21.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mklpro21.com/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mklpro21.com/pic-edit/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://mklpro21.com/pic-edit/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mklpro21.com/en/pic-edit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mklpro21.com/de/pic-edit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mklpro21.com/pic-edit/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mklpro21.com/en/pic-edit/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://mklpro21.com/pic-edit/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mklpro21.com/en/pic-edit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mklpro21.com/de/pic-edit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mklpro21.com/pic-edit/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mklpro21.com/de/pic-edit/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://mklpro21.com/pic-edit/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mklpro21.com/en/pic-edit/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mklpro21.com/de/pic-edit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mklpro21.com/pic-edit/"/>
+    <priority>0.7</priority>
+  </url>
   <url><loc>https://mklpro21.com/podpora/</loc><priority>0.5</priority></url>
   <url><loc>https://mklpro21.com/zasebnost/</loc><priority>0.5</priority></url>
 </urlset>

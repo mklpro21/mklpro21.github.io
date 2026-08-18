@@ -11,8 +11,10 @@ Statična stran, brez gradnje — kar je v repozitoriju, je tisto, kar se strež
 ```
 index.html            slovenska naslovnica (Lazy Pro Trip)
 en/index.html         angleška naslovnica
+de/index.html         nemška naslovnica
 pic-edit/             LPT Pic Edit — slovensko
 en/pic-edit/          LPT Pic Edit — angleško
+de/pic-edit/          LPT Pic Edit — nemško
 podpora/              podpora + pogosta vprašanja (SL + EN na eni strani)
 zasebnost/            pravilnik o zasebnosti (SL + EN na eni strani)
 assets/css/site.css   celotno oblikovanje, ena datoteka
@@ -25,6 +27,11 @@ CNAME                 mklpro21.com
 **Naslova, ki ju ima Apple v App Store Connect**, sta `‌/podpora/` in
 `‌/zasebnost/`. Če se poti kdaj spremenita, je treba popraviti tudi vpis v ASC —
 sicer pregledovalec naleti na 404.
+
+⚠️ **Podpora in zasebnost sta samo SL + EN.** Nemški strani nanju kažeta z
+napisoma »Support« in »Datenschutz«, obiskovalec pa pristane na dvojezični
+strani. Če se doda nemščina, se `podpora/` in `zasebnost/` uredita **skupaj** —
+naslova ostaneta ista, ker sta vpisana v ASC.
 
 ## Predogled
 
@@ -57,6 +64,28 @@ stranka ima na vseh zaslonih isto novo ime:
 
 ⚠️ **Ob dodajanju novega posnetka preveri isto.** Najhitreje z Applovim Vision
 OCR: preberi besedilo s slike in poišči prava imena, preden datoteko commitaš.
+
+### Nemški posnetki (`30-de-*` … `39-de-*`)
+
+Iz serije nemških posnetkov z dne 18. 8. 2026 jih je na strani **deset**.
+Prečiščevanje:
+
+| posnetek | kaj je bilo narejeno |
+| --- | --- |
+| `30-de-aktivna-pot` | tablica `LJ 62-ZKG` na fotografiji in oznaka `LJ62ZKG` v vrstici vozila **zamenjani** s prečiščenima izrezoma iz `01-aktivna-pot.webp` (ista fotografija, zamik 23 px) |
+| `35-de-vozilo` | tablica `LJ87CUG` je bila zabrisana, a jo je Vision **še vedno prebral** (`LJ087-CUG`) — prekrita z mozaikom in zabrisana |
+| ostalih osem | brez posegov, OCR ne najde ničesar |
+
+**Zavrnjeni posnetki** — vsebujejo prava imena podjetij in zaseben naslov, ki
+niso bili prečiščeni; če jih kdaj dodajamo, jih je treba najprej prepisati po
+tabeli zgoraj:
+
+| posnetek | kaj je na njem |
+| --- | --- |
+| `IMG_0203`, `IMG_0221` | seznam strank — Žabjek d.o.o., Dobles, Starman, Tehimpex, Metaloprema, Tehnodom 2, Starles |
+| `IMG_0208`, `IMG_0225` | postanki in poti — McDonald's Celje, MERKUR Celje, MOL Rudnik, Trafika 3DVA **in zaseben stanovanjski naslov** |
+| `IMG_0201` | nastavitve — oseben e-naslov v vrstici Cloud-Backup |
+| `IMG_0207` | izvirnik posnetka `30-de-aktivna-pot`, z nezabrisano tablico |
 
 ## Oblikovanje
 
