@@ -28,10 +28,15 @@ CNAME                 mklpro21.com
 `‌/zasebnost/`. Če se poti kdaj spremenita, je treba popraviti tudi vpis v ASC —
 sicer pregledovalec naleti na 404.
 
-⚠️ **Podpora in zasebnost sta samo SL + EN.** Nemški strani nanju kažeta z
-napisoma »Support« in »Datenschutz«, obiskovalec pa pristane na dvojezični
-strani. Če se doda nemščina, se `podpora/` in `zasebnost/` uredita **skupaj** —
-naslova ostaneta ista, ker sta vpisana v ASC.
+**Podpora in zasebnost sta trojezični na eni strani** (SL, nato EN, nato DE),
+ločeni z `<hr>` in dosegljivi prek zaznamkov `#en` in `#de`. Nemški strani nanju
+kažeta neposredno z `/podpora/#de` in `/zasebnost/#de`. Naslova sama ostaneta
+`‌/podpora/` in `‌/zasebnost/`, ker sta vpisana v ASC — jezik se dodaja **v** stran,
+ne kot nova pot.
+
+⚠️ Ob spremembi pravilnika o zasebnosti je treba popraviti **vse tri** različice
+in datum v vseh treh. Trenutno vse tri navajajo 13. avgust 2026; dodajanje
+nemškega prevoda vsebine ni spremenilo, zato datum ostaja.
 
 ## Predogled
 
@@ -65,16 +70,25 @@ stranka ima na vseh zaslonih isto novo ime:
 ⚠️ **Ob dodajanju novega posnetka preveri isto.** Najhitreje z Applovim Vision
 OCR: preberi besedilo s slike in poišči prava imena, preden datoteko commitaš.
 
-### Nemški posnetki (`30-de-*` … `39-de-*`)
+### Nemški posnetki (`30-de-*` … `42-de-*`)
 
-Iz serije nemških posnetkov z dne 18. 8. 2026 jih je na strani **deset**.
+Iz serije nemških posnetkov z dne 18. 8. 2026 jih je na strani **trinajst**.
 Prečiščevanje:
 
 | posnetek | kaj je bilo narejeno |
 | --- | --- |
 | `30-de-aktivna-pot` | tablica `LJ 62-ZKG` na fotografiji in oznaka `LJ62ZKG` v vrstici vozila **zamenjani** s prečiščenima izrezoma iz `01-aktivna-pot.webp` (ista fotografija, zamik 23 px) |
 | `35-de-vozilo` | tablica `LJ87CUG` je bila zabrisana, a jo je Vision **še vedno prebral** (`LJ087-CUG`) — prekrita z mozaikom in zabrisana |
+| `40-de-tema-carbon`, `41-de-tema-usnje`, `42-de-tema-svetla` | ista tablica: zamegljeni sta bili samo srednji dve števki, `LJ` in `-CUG` sta ostala berljiva s prostim očesom (Vision je zaradi packe odpovedal, človek ne) — prekrita z mozaikom |
 | ostalih osem | brez posegov, OCR ne najde ničesar |
+
+⚠️ **Vision OCR ni zadosten preizkus za tablice.** Packa čez sredino besedila
+zavede OCR, človeku pa ostane dovolj. Pri tablicah poglej tudi sam, povečano.
+
+Trije posnetki tem (`40`–`42`) namenoma prikazujejo tudi napako v nemškem
+prevodu — napis na gumbu se lomi sredi besede (`GESCHÄFTSRE` / `ISE STARTEN`).
+Odločitev z dne 18. 8. 2026: posnetke uporabimo, ker dobro pokažejo tri ozadja;
+napis se popravi v aplikaciji.
 
 **Zavrnjeni posnetki** — vsebujejo prava imena podjetij in zaseben naslov, ki
 niso bili prečiščeni; če jih kdaj dodajamo, jih je treba najprej prepisati po
