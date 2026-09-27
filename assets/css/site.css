@@ -423,6 +423,15 @@ h3 {
   line-height: 1.6;
 }
 
+/* Podpis avtorja (MKLpro21): znak v svojih barvah, napis v barvi besedila (izvirnik je
+   temen na sivi podlagi — podlaga izrezana, glej docs/SESJA-2026-09-27-…). Vrstica zase,
+   tik nad drobnim tiskom; razmik nadomesti vrzel vrstice v .footer-inner. */
+.maker { display: flex; align-items: center; gap: 10px; width: 100%; margin-top: 22px; }
+.footer .maker img { opacity: 1; }
+.footer .maker .maker-mark { height: 24px; }
+.footer .maker .maker-word { height: 14px; opacity: 0.72; }
+.maker + .fine-print { margin-top: -12px; }
+
 /* ---------------------------------------------------------------- besedilo ---
    Podpora in zasebnost: ista paleta, brez okrasja. */
 

@@ -23,6 +23,7 @@ zasebnost/            pravilnik o zasebnosti (EN, SL, DE na eni strani)
 assets/css/site.css   celotno oblikovanje, ena datoteka
 assets/fonts/         Jura in Geist Mono (SIL OFL) — gostujeta lokalno
 assets/img/shots/     posnetki zaslona, WebP
+assets/img/mklpro21-* znak »M« in napis MKLpro21 — podpis avtorja v nogi vseh strani
 design/               oblikovna filozofija in izhodiščni list
 docs/                 zapisi sej — kaj se je na strani spremenilo in zakaj
 CNAME                 mklpro21.com

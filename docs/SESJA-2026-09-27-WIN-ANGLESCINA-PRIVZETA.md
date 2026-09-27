@@ -89,6 +89,29 @@ preusmeritvi na `/podpora/` in `/zasebnost/`.
 - **Google** IndexNow ne podpira — potrebna je Search Console z lastnikovo prijavo (koraki v
   `README.md`). To ostaja uporabniku.
 
+## Logotip MKLpro21 (dopolnitev iste seje)
+
+Vir: `Documents\MKLpro21\MKLpro21 logo.zip` (Grok). Arhiv vsebuje **plasti**, ki jih je orodje
+izrezalo iz ene slike, ne končnih datotek:
+
+| plast | uporabno? |
+| --- | --- |
+| `stylized-m-logo.png` (436×348) | ✅ znak »M«, modro-turkizen preliv, čisto prosojno ozadje |
+| `mklpro21.png` (461×112) | ⚠️ napis — temnomoder (`#03182D`) na **neprosojni** sivi podlagi (`#DDD`) |
+| `illegible.png`, `light-gray-background.png` | ❌ odrezek znaka in podlaga z izrezom |
+
+Obdelava (PIL): znak obrezan na vsebino in pomanjšan na 128 px višine → `assets/img/mklpro21-mark.png`
+(160×128, prikaz 24 px). Napisu je podlaga izrezana iz svetlosti (alfa = (218 − L) / 206, gladi
+robove) in besedilo prebarvano v `--text` `#dfe9f6`, ker bi bil temen napis na temni strani neviden
+→ `assets/img/mklpro21-wordmark.png` (440×95, prikaz 14 px, prosojnost 0,72).
+
+Umestitev: **podpis avtorja v nogi vseh osmih strani** (`.maker` v `site.css`), vrstica nad drobnim
+tiskom. Glava ostaja logotip Lazy Pro Trip — stran predstavlja aplikacijo, MKLpro21 je izdelovalec.
+Ime v drobnem tisku in v politiki poenoteno z logotipom: `MKLpro` → **`MKLpro21`**.
+
+Ostali trije arhivi v isti mapi (`logo2`–`logo4`, 17. 9.) niso bili ne pregledani ne uporabljeni —
+uporabnik je izbral `MKLpro21 logo.zip`.
+
 ## Aplikacija (repozitorij LPT)
 
 `privacyPolicyUrl('sl')` vrne `…/zasebnost/#sl` (prej brez sidra) — test posodobljen.
