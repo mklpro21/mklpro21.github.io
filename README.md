@@ -9,14 +9,17 @@ Statična stran, brez gradnje — kar je v repozitoriju, je tisto, kar se strež
 ## Kaj je kje
 
 ```
-index.html            slovenska naslovnica (Lazy Pro Trip)
-en/index.html         angleška naslovnica
+index.html            angleška naslovnica (Lazy Pro Trip) — PRIVZETA od 27. 9. 2026
+sl/index.html         slovenska naslovnica
 de/index.html         nemška naslovnica
-pic-edit/             LPT Pic Edit — slovensko
-en/pic-edit/          LPT Pic Edit — angleško
+pic-edit/             LPT Pic Edit — angleško
+sl/pic-edit/          LPT Pic Edit — slovensko
 de/pic-edit/          LPT Pic Edit — nemško
-podpora/              podpora + pogosta vprašanja (SL + EN na eni strani)
-zasebnost/            pravilnik o zasebnosti (SL + EN na eni strani)
+en/, en/pic-edit/     samo preusmeritvi na / in /pic-edit/ (stari angleški naslovi)
+podpora/              podpora + pogosta vprašanja (EN, SL, DE na eni strani)
+zasebnost/            pravilnik o zasebnosti (EN, SL, DE na eni strani)
+404.html              stran za neobstoječe naslove (GitHub Pages jo streže sam)
+<ključ>.txt           ključ IndexNow (32 hex znakov) — glej »Indeksiranje«
 assets/css/site.css   celotno oblikovanje, ena datoteka
 assets/fonts/         Jura in Geist Mono (SIL OFL) — gostujeta lokalno
 assets/img/shots/     posnetki zaslona, WebP
@@ -25,19 +28,33 @@ docs/                 zapisi sej — kaj se je na strani spremenilo in zakaj
 CNAME                 mklpro21.com
 ```
 
+**Privzeti jezik je angleščina** (odločitev 27. 9. 2026): v primeru nejasnosti je
+angleško besedilo glavni prevod, `hreflang="x-default"` kaže na angleško stran.
+Do 27. 9. je bila na `/` slovenščina, angleščina pa na `/en/`.
+
 **Naslova, ki ju ima Apple v App Store Connect**, sta `‌/podpora/` in
 `‌/zasebnost/`. Če se poti kdaj spremenita, je treba popraviti tudi vpis v ASC —
 sicer pregledovalec naleti na 404.
 
-**Podpora in zasebnost sta trojezični na eni strani** (SL, nato EN, nato DE),
-ločeni z `<hr>` in dosegljivi prek zaznamkov `#en` in `#de`. Nemški strani nanju
-kažeta neposredno z `/podpora/#de` in `/zasebnost/#de`. Naslova sama ostaneta
+**Podpora in zasebnost sta trojezični na eni strani** (EN, nato SL, nato DE),
+ločeni z `<hr>` in dosegljivi prek zaznamkov `#sl` in `#de` (`#en` je vrh strani).
+Slovenski strani nanju kažeta z `#sl`, nemški z `#de`. Naslova sama ostaneta
 `‌/podpora/` in `‌/zasebnost/`, ker sta vpisana v ASC — jezik se dodaja **v** stran,
 ne kot nova pot.
 
+**Aplikacija odpira pravilnik z zaznamkom po jeziku** (`privacyPolicyUrl()` v
+`constants/appInfo.ts` repozitorija aplikacije). Buildi do vključno 4.40 (24) za
+slovenščino pošljejo `/zasebnost/` brez zaznamka — ti od 27. 9. pristanejo na
+angleškem vrhu.
+
+**Izbris računa** (Google Play »Account deletion URL«, Apple 5.1.1(v)):
+`/zasebnost/#delete-account` (EN), `#izbris-racuna` (SL), `#konto-loeschen` (DE).
+Če se zaznamek spremeni, popravi vpis v Play Console.
+
 ⚠️ Ob spremembi pravilnika o zasebnosti je treba popraviti **vse tri** različice
-in datum v vseh treh. Trenutno vse tri navajajo 13. avgust 2026; dodajanje
-nemškega prevoda vsebine ni spremenilo, zato datum ostaja.
+in datum v vseh treh. Trenutno vse tri navajajo **27. september 2026** (RevenueCat,
+prijava z e-pošto/Googlom/Applom, oblak brez sledi v osnovnem paketu, števec uporabe,
+anonimno mesečno štetje, izbris računa, hramba dnevnikov največ 12 mesecev).
 
 ## Predogled
 
@@ -136,19 +153,33 @@ zapise in `www`:
 ⚠️ **MX zapisov se ne dotikaj** — pošta `team@mklpro21.com` teče prek Googla in
 je hkrati `SUPPORT_EMAIL` v aplikaciji.
 
-## ⚠️ CNAME ni aktiven
+## Domena
 
-Vsebina domene je pripravljena v `CNAME.txt`, a **ni** aktivirana — dokler DNS
-kaže na Squarespace, bi aktiven `CNAME` pomenil, da `mklpro21.github.io`
-preusmerja na domeno, ki še ne dela, in stran ne bi bila dosegljiva nikjer.
+`CNAME` je aktiven od commita `3b346d9`. Vse različice naslova (`http://`,
+`www.`, `mklpro21.github.io`) GitHub Pages preusmeri s 301 na
+`https://mklpro21.com/` — kanonični naslov je **brez `www`**.
 
-Po preklopu DNS zapisov (glej zgoraj) domeno vklopiš z:
+Projektne strani tega računa živijo pod isto domeno —
+`mklpro21.github.io/lazyprotrip-support/` je `mklpro21.com/lazyprotrip-support/`.
+Od 27. 9. 2026 sta tam samo še preusmeritvi na `/podpora/` in `/zasebnost/`
+(repozitorij `mklpro21/lazyprotrip-support`), da ne visi podvojena, zastarela
+politika zasebnosti.
 
-```bash
-git mv CNAME.txt CNAME && git commit -m "Vklop domene mklpro21.com" && git push
-```
+## Indeksiranje
 
-Takrat se **vse** projektne strani tega računa preselijo pod domeno —
-`mklpro21.github.io/lazyprotrip-support/` postane `mklpro21.com/lazyprotrip-support/`.
-Stari naslov se preusmeri, a Support in Privacy URL v App Store Connect je
-vseeno pametno posodobiti na `/podpora/` in `/zasebnost/`.
+Do 27. 9. 2026 strani ni poznal noben iskalnik (`site:mklpro21.com` prazno), čeprav
+je bila tehnično odprta. Iskalnik strani sam od sebe ne najde, dokler nanjo ne kaže
+nobena povezava.
+
+- **Bing, Yandex, Seznam, Naver** — prek IndexNow. Ključ je v datoteki
+  `<ključ>.txt` v korenu (vsebina = ime brez `.txt`). Po vsaki večji spremembi:
+
+  ```bash
+  curl -X POST https://api.indexnow.org/indexnow -H "Content-Type: application/json; charset=utf-8" -d '{"host":"mklpro21.com","key":"<ključ>","keyLocation":"https://mklpro21.com/<ključ>.txt","urlList":["https://mklpro21.com/"]}'
+  ```
+
+- **Google** IndexNow ne podpira; potrebna je **Google Search Console** z
+  lastnikovo prijavo: dodaj lastnost *Domena* `mklpro21.com`, potrdi jo z zapisom
+  TXT pri Squarespaceu (MX zapisov se ne dotikaj), nato *Sitemaps* →
+  `https://mklpro21.com/sitemap.xml` in *Pregled URL-ja* → *Zahtevaj indeksiranje*
+  za `/`, `/sl/` in `/de/`.
