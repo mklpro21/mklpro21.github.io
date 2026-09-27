@@ -125,8 +125,14 @@ dnevnika — brez modela telefona, privzeti jezik, odsotnost analitike v `packag
 - **App Store Connect:** Support URL in Privacy URL ostaneta `/podpora/` in `/zasebnost/` —
   preveri, da ne kažeta še na `mklpro21.github.io/lazyprotrip-support/…` (bi delalo prek
   preusmeritve, a je ovinek).
-- **Pravilnik nima imena in naslova upravljavca** (GDPR 13(1)(a)) — samo »MKLpro« v nogi in
-  e-naslov. Rabi pravno ime in naslov.
+- ✅ **Upravljavec vpisan** (dopolnitev iste seje): razdelek *Who is responsible* / *Kdo je
+  odgovoren* / *Verantwortlicher* (`#controller`, `#upravljavec`, `#verantwortlicher`) — »Matej
+  Kljun, Slovenija · team@mklpro21.com; MKLpro je ime znamke, ne registrirano podjetje«.
+  Registriranega podjetja ni (MklPro s.p. je zaprt), zato je upravljavec fizična oseba; domači
+  naslov namenoma ni objavljen (GDPR 13(1)(a) zahteva identiteto in kontakt, e-naslov zadošča).
+  ⚠️ **Pred vklopom Pro** ne bo več dovolj: DSA status trgovca v obeh trgovinah objavi naslov in
+  telefon, redna prodaja naročnin pa verjetno zahteva registrirano dejavnost (preveri računovodja).
+  Ko bo registrirana, v politiko vpiši njeno ime in poslovni naslov.
 - **Čiščenje `user-logs/`** v repozitoriju aplikacije starejših od 12 mesecev — politika to
   zdaj obljublja. Najstarejši dnevniki so z avgusta 2026, rok torej prvič poteče avgusta 2027.
 - **RevenueCat ob izbrisu računa** stranke ne izbriše samodejno — politika zato piše »na
