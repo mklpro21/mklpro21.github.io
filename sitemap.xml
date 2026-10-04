@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mklpro21.com/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mklpro21.com/"/>
     <xhtml:link rel="alternate" hreflang="sl" href="https://mklpro21.com/sl/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mklpro21.com/de/"/>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://mklpro21.com/sl/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mklpro21.com/"/>
     <xhtml:link rel="alternate" hreflang="sl" href="https://mklpro21.com/sl/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mklpro21.com/de/"/>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://mklpro21.com/de/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mklpro21.com/"/>
     <xhtml:link rel="alternate" hreflang="sl" href="https://mklpro21.com/sl/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mklpro21.com/de/"/>
@@ -55,6 +55,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mklpro21.com/pic-edit/"/>
     <priority>0.7</priority>
   </url>
-  <url><loc>https://mklpro21.com/podpora/</loc><lastmod>2026-09-27</lastmod><priority>0.6</priority></url>
-  <url><loc>https://mklpro21.com/zasebnost/</loc><lastmod>2026-09-27</lastmod><priority>0.5</priority></url>
+  <url><loc>https://mklpro21.com/podpora/</loc><lastmod>2026-10-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://mklpro21.com/zasebnost/</loc><lastmod>2026-10-04</lastmod><priority>0.5</priority></url>
 </urlset>
