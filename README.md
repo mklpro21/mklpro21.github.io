@@ -124,9 +124,10 @@ WebP 760 px (široki: widget 1080 × 600 izrez, ležeči Pic Edit 1200 px).
 | `43`–`45` EN, `46`–`48` SL, `49`–`51` DE | nadzorna plošča LPT v treh ozadjih (carbon, usnje, svetlo), vsaka v svojem jeziku |
 | `52`–`54` | widget za Android na domačem zaslonu (EN, DE, SL), izrez iz celega zaslona |
 | `55`–`58`, `60` | LPT Pic Edit 1.3.0: žarek (turkizen, zlat, rožnat), Car Beautify, ležeči način |
+| `59` | Pic Edit, Blur → Plate ležeče (`…12-51-38`) — lupa kaže le `SLO LJ`, grb in zabrisan okvir trgovca; številka ni vidna |
 
 Vozilo je povsod `Škodilak · LJ 01 LPT` — prekrivna tablica iz Pic Edita, OCR ni potreben.
-**Zavrnjeni:** trije posnetki zavihka Blur → Plate (`…12-51-14`, `…12-51-38`, `…12-51-51`) — lupa v kotu kaže **izvirno tablico** pod prekrivno. Za stran se uporabi
+**Zavrnjena:** posnetka zavihka Blur → Plate `…12-51-14` in `…12-51-51` — lupa v kotu kaže **izvirno tablico** pod prekrivno. Za stran se uporabi
 posnetek brez lupe (ali z drugim avtom).
 
 **Zavrnjeni posnetki** — vsebujejo prava imena podjetij in zaseben naslov, ki

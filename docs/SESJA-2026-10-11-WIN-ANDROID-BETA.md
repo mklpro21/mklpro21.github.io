@@ -36,15 +36,16 @@ posnetki z iPhona, veja gre v `main` in šele takrat na mklpro21.com.
 | Izrez in žarek | »Applov Vision« | **Vision na iPhonu, Googlov ML Kit na Androidu** (preverjeno v `lpt-pic-edit/modules/subject-extractor`); slika `57` (zlat žarek) |
 | **nov** razdelek Car Beautify | — | Polish, Clarity, Contrast, Saturate, Shine; AutoFix, Reset (`FilterPanel.tsx`); slika `56` |
 | Kader | `12` (pokončno) | **ležeči posnetek** `60` + točka »telefon obrnite na ležeče za večje platno« |
-| kartica Tablica in obraz | samo čopič | **tablica**: vlečenje ali 4 vogali, lupa, zabris ali prekrivna tablica (bela/rumena/črna) z lastnim napisom v perspektivi; čopič za obraz |
+| kartica Tablica in obraz | samo čopič | **tablica**: vlečenje ali 4 vogali, lupa, zabris ali prekrivna tablica (bela/rumena/črna) z lastnim napisom v perspektivi; čopič za obraz; **slika `59`** (ležeče, lupa in navodila) |
 | prijava | 1.2.1, en gumb | **1.3.0**, dva gumba (kot zgoraj) |
 
 ### Posnetki
 
-- Novi: `43`–`58`, `60` (opis v `README.md` → »Androidni posnetki«).
+- Novi: `43`–`60` (opis v `README.md` → »Androidni posnetki«).
 - Odstranjeni (nič več ne kaže nanje): `09`–`12` (stari Pic Edit), `22-widget-android` (stari
   androidni widget), `29-ozadja`, `40`–`42-de-tema-*`.
-- Zavrnjeni: vsi trije posnetki Blur → Plate — lupa kaže izvirno tablico.
+- Zavrnjena: dva pokončna posnetka Blur → Plate — lupa kaže izvirno tablico. Ležeči
+  (`…12-51-38`) je uporabljen kot `59`: v lupi sta le `SLO LJ` in okvir, številke ni.
 - `sitemap.xml`: `lastmod` 2026-10-11 za šest spremenjenih strani.
 
 ### Preverjeno
@@ -63,9 +64,7 @@ ne drsi vodoravno, oba gumba za prijavo sta na telefonu cela.
 3. **LPT Pic Edit na iPhonu** v novem svetlem videzu (1.3.0), če je iOS build že tam —
    na strani piše »različica 1.3.0« za obe platformi. Če iOS še ni na 1.3.0, popravi besedilo.
 4. **Posnetek »pred«** (fotografija z ozadjem) — z njim se lahko vrne par Pred / Po.
-5. **Tablica (Blur → Plate) brez lupe** — npr. posnetek po spustu prsta, ali z avtom s
-   tujo/izmišljeno tablico. Takrat lahko kartica »Tablica in obraz« dobi svojo sliko.
-6. Neobvezno: novi posnetki seznama poti, zemljevida, vozil, postankov, strank, izvoza
+5. Neobvezno: novi posnetki seznama poti, zemljevida, vozil, postankov, strank, izvoza
    (vsi so iz avgusta, stari videz), Live Activity in CarPlay. Ob vsakem preveri imena
    strank in tablice (`README.md` → »Posnetki zaslona«).
 
