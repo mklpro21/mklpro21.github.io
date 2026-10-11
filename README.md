@@ -137,7 +137,7 @@ v avtu so fotografije). Pretvorjeni s `cwebp -q 80` (`brew install webp`; `sips`
 
 | posnetek | vir | kaj |
 | --- | --- | --- |
-| `61` EN, `62` SL | `IMG_0432`, `0433` | naslovna slika: nadzorna plošča, ozadje carbon |
+| `61` EN, `62` SL | `IMG_0468`, `0465` (mapa `Screen shots UI 3 lang and 2 cars`) | naslovna slika: nadzorna plošča, ozadje carbon, prekrivna tablica `LJ 01 LPT` |
 | `63` EN, `64` SL, `65` DE | `IMG_0397`, `0398`, `0394` | widget na iPhonu z gumbom REFRESH / OSVEŽI / NEU LADEN (izrez) |
 | `66` EN (tudi DE), `67` SL | `IMG_0389`, `0400` | živa aktivnost na zaklenjenem zaslonu |
 | `68` EN, `69` SL, `70` DE | `IMG_0385`, `0401`, `0396` | živa aktivnost v CarPlay |
@@ -146,7 +146,7 @@ v avtu so fotografije). Pretvorjeni s `cwebp -q 80` (`brew install webp`; `sips`
 
 Tablica na fotografiji avta je v aplikaciji že zakrita (vidi se le `LJ`). **Zavrnjen:**
 `IMG_0384` — obvestilo o postanku kaže pravo ime stranke. Nemška nadzorna plošča na iPhonu
-(`IMG_0428`, `0429`) lomi gumb sredi besede (»GESCHÄFTSRE / ISE«), zato DE naslovna slika
+(`IMG_0428`, `0429`, `0469`, `0470`) lomi gumb sredi besede (»GESCHÄFTSRE / ISE«), zato DE naslovna slika
 ostaja `30-de-aktivna-pot`.
 
 **Zavrnjeni posnetki** — vsebujejo prava imena podjetij in zaseben naslov, ki
