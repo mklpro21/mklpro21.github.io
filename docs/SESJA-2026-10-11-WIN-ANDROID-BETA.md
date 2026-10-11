@@ -91,3 +91,21 @@ ne drsi vodoravno, oba gumba za prijavo sta na telefonu cela.
 - `17-statistika`, `20-stroski`, `23-izvoz-podjetje`, `27-nastavitve-sl` niso bili v rabi
   že pred to sejo — lahko se odstranijo.
 - Odprte točke iz `SESJA-2026-09-27-…` (Search Console, javna tabela zamenjav v README).
+
+---
+
+## Nadaljevanje na Macu (11. 10. 2026) — posnetki z iPhona, Android Auto
+
+Vir: `Downloads/Screen shots IOS new build 3 langage` (opis v `README.md` → »Posnetki z iPhona in avtomobila«).
+
+- **Naslovna slika** EN `61`, SL `62` — nadzorna plošča s Škodilakom. DE ostaja `30`:
+  nemški iPhone posnetki lomijo gumb »GESCHÄFTSRE / ISE STARTEN« (napaka v aplikaciji).
+- **Widget na iPhonu** v jeziku strani (`63`–`65`), gumb REFRESH / OSVEŽI / NEU LADEN.
+- **Živa aktivnost** `66` (EN, DE) in `67` (SL); **CarPlay** v jeziku strani (`68`–`70`).
+- **Android Auto je podprt** — nova slika v razdelku 03 (`71`–`73`), omemba v novostih, v
+  okvirju »Deluje z avtom« in v drobnem tisku (blagovna znamka).
+- EN seznam vozil `03` → `74`.
+- Odstranjeni neuporabljeni: `01`, `03`, `06`, `07`, `08`, `17`, `20`, `21`, `23`, `27`.
+
+Še odprto: DE naslovna slika, Pic Edit na iPhonu (1.3.0?), posnetek »pred«, prijava na
+Androidu, Google Assistant, `podpora/` (Android, Android Auto).

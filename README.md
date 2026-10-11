@@ -130,6 +130,25 @@ Vozilo je povsod `Škodilak · LJ 01 LPT` — prekrivna tablica iz Pic Edita, OC
 **Zavrnjena:** posnetka zavihka Blur → Plate `…12-51-14` in `…12-51-51` — lupa v kotu kaže **izvirno tablico** pod prekrivno. Za stran se uporabi
 posnetek brez lupe (ali z drugim avtom).
 
+### Posnetki z iPhona in avtomobila (`61-*` … `74-*`, 11. 10. 2026)
+
+Vir: `Downloads/Screen shots IOS new build 3 langage` (iPhone 8. 10., LPT 4.42; zasloni
+v avtu so fotografije). Pretvorjeni s `cwebp -q 80` (`brew install webp`; `sips` WebP ne zapiše).
+
+| posnetek | vir | kaj |
+| --- | --- | --- |
+| `61` EN, `62` SL | `IMG_0432`, `0433` | naslovna slika: nadzorna plošča, ozadje carbon |
+| `63` EN, `64` SL, `65` DE | `IMG_0397`, `0398`, `0394` | widget na iPhonu z gumbom REFRESH / OSVEŽI / NEU LADEN (izrez) |
+| `66` EN (tudi DE), `67` SL | `IMG_0389`, `0400` | živa aktivnost na zaklenjenem zaslonu |
+| `68` EN, `69` SL, `70` DE | `IMG_0385`, `0401`, `0396` | živa aktivnost v CarPlay |
+| `71` EN, `72` SL, `73` DE | `IMG_0404`, `0417`, `0409` | Android Auto med potjo |
+| `74` EN | `IMG_0426` | seznam vozil (`LJ 01 LPT`, `LJ 02 LPT`) |
+
+Tablica na fotografiji avta je v aplikaciji že zakrita (vidi se le `LJ`). **Zavrnjen:**
+`IMG_0384` — obvestilo o postanku kaže pravo ime stranke. Nemška nadzorna plošča na iPhonu
+(`IMG_0428`, `0429`) lomi gumb sredi besede (»GESCHÄFTSRE / ISE«), zato DE naslovna slika
+ostaja `30-de-aktivna-pot`.
+
 **Zavrnjeni posnetki** — vsebujejo prava imena podjetij in zaseben naslov, ki
 niso bili prečiščeni; če jih kdaj dodajamo, jih je treba najprej prepisati po
 tabeli zgoraj:
