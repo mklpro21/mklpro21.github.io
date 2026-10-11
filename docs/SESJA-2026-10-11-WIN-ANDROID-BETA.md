@@ -107,7 +107,7 @@ Vir: `Downloads/Screen shots IOS new build 3 langage` (opis v `README.md` → »
 - EN seznam vozil `03` → `74`.
 - Odstranjeni neuporabljeni: `01`, `03`, `06`, `07`, `08`, `17`, `20`, `21`, `23`, `27`.
 
-Še odprto: DE naslovna slika (napaka v aplikaciji). Par Pred / Po za Pic Edit je dodan (`76`, `77`).
+Še odprto: DE naslovna slika (napaka v aplikaciji). Par Pred / Po za Pic Edit je dodan (`76`, `77`), ob njem rezultat v LPT (`78`).
 
 Odgovori uporabnika (11. 10.): Pic Edit 1.3.0 deluje na iOS; Android prijava = vpis med
 preizkuševalce in vabilo (osnutek pripravi agent, uporabnik potrdi); Google Assistant še ni,

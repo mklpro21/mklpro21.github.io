@@ -323,9 +323,6 @@ h3 {
 .two-up { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
 .two-up .device { max-width: 228px; }
 
-/* dva široka posnetka drug ob drugem (pred / po) */
-.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 64px; }
-
 /* ena naprava ob dveh širokih posnetkih */
 .split { display: grid; grid-template-columns: 300px 1fr; gap: 64px; align-items: start; }
 .stack { display: grid; gap: 44px; }
@@ -479,7 +476,7 @@ h3 {
 @media (max-width: 940px) {
   .hero-grid, .feature { grid-template-columns: 1fr; gap: 54px; }
   .feature.rev .ftext { order: 0; }
-  .steps, .cards, .cards.two, .trio, .split, .platforms, .pair { grid-template-columns: 1fr; }
+  .steps, .cards, .cards.two, .trio, .split, .platforms { grid-template-columns: 1fr; }
   .trio, .split { gap: 54px; }
   .crossapp { grid-template-columns: 1fr; justify-items: center; text-align: center; }
   .hero-trace { display: none; }
