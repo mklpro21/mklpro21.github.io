@@ -111,10 +111,23 @@ Prečiščevanje:
 ⚠️ **Vision OCR ni zadosten preizkus za tablice.** Packa čez sredino besedila
 zavede OCR, človeku pa ostane dovolj. Pri tablicah poglej tudi sam, povečano.
 
-Trije posnetki tem (`40`–`42`) namenoma prikazujejo tudi napako v nemškem
-prevodu — napis na gumbu se lomi sredi besede (`GESCHÄFTSRE` / `ISE STARTEN`).
-Odločitev z dne 18. 8. 2026: posnetke uporabimo, ker dobro pokažejo tri ozadja;
-napis se popravi v aplikaciji.
+Posnetki tem `40`–`42` (z napisom, ki se je lomil sredi besede) so bili 11. 10. 2026
+**odstranjeni** in zamenjani z `49`–`51` — glej spodaj.
+
+### Androidni posnetki (`43-*` … `60-*`, 11. 10. 2026)
+
+Vir: `Downloads\Android Screen shot LPT in LPT pic` (Redmi, 8.–11. 10.), pretvorjeni v
+WebP 760 px (široki: widget 1080 × 600 izrez, ležeči Pic Edit 1200 px).
+
+| posnetek | kaj |
+| --- | --- |
+| `43`–`45` EN, `46`–`48` SL, `49`–`51` DE | nadzorna plošča LPT v treh ozadjih (carbon, usnje, svetlo), vsaka v svojem jeziku |
+| `52`–`54` | widget za Android na domačem zaslonu (EN, DE, SL), izrez iz celega zaslona |
+| `55`–`58`, `60` | LPT Pic Edit 1.3.0: žarek (turkizen, zlat, rožnat), Car Beautify, ležeči način |
+
+Vozilo je povsod `Škodilak · LJ 01 LPT` — prekrivna tablica iz Pic Edita, OCR ni potreben.
+**Zavrnjeni:** trije posnetki zavihka Blur → Plate (`…12-51-14`, `…12-51-38`, `…12-51-51`) — lupa v kotu kaže **izvirno tablico** pod prekrivno. Za stran se uporabi
+posnetek brez lupe (ali z drugim avtom).
 
 **Zavrnjeni posnetki** — vsebujejo prava imena podjetij in zaseben naslov, ki
 niso bili prečiščeni; če jih kdaj dodajamo, jih je treba najprej prepisati po
