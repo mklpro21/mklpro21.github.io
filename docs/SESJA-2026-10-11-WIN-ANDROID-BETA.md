@@ -125,3 +125,4 @@ Vir: `Downloads\Screen shot Android DE in maps` (opis v `README.md` → »Nemšk
   zadnja odprta točka posnetkov je s tem zaprta.
 - **Zemljevid v jeziku strani**: EN `81`, SL `82` (obe prej `02`), DE `80` (prej Applov `32`).
 - Odstranjeni: `02`, `30`, `32`.
+- **DE izbirnik jezika** `19` → `83` (»Sprache«, Deutsch izbran; posnetek s telefona prek adb).

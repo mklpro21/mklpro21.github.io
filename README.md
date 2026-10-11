@@ -158,6 +158,7 @@ Vir: `Downloads\Screen shot Android DE in maps` (Redmi, 11. 10.), WebP 760 px.
 | posnetek | vir | kaj |
 | --- | --- | --- |
 | `79` DE | `…20-34-01` | naslovna slika DE: aktivna pot, carbon, gumb FAHRT BEENDEN — nadomešča `30` |
+| `83` DE | `…21-00-56` (s telefona prek adb) | izbirnik jezika »Sprache«, izbran Deutsch — nadomešča `19` na DE strani |
 | `80` DE, `81` EN, `82` SL | `…20-34-25`, `…20-35-06`, `…20-35-31` | zemljevid službene poti Koper–Ljubljana–Celje — nadomešča `32` (DE) in `02` (EN, SL) |
 
 Na zemljevidih so le mesta in žebljički postankov, brez naslovov in imen strank. Neuporabljen:
