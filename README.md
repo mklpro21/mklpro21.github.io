@@ -148,8 +148,20 @@ v avtu so fotografije). Pretvorjeni s `cwebp -q 80` (`brew install webp`; `sips`
 
 Tablica na fotografiji avta je v aplikaciji že zakrita (vidi se le `LJ`). **Zavrnjen:**
 `IMG_0384` — obvestilo o postanku kaže pravo ime stranke. Nemška nadzorna plošča na iPhonu
-(`IMG_0428`, `0429`, `0469`, `0470`) lomi gumb sredi besede (»GESCHÄFTSRE / ISE«), zato DE naslovna slika
-ostaja `30-de-aktivna-pot`.
+(`IMG_0428`, `0429`, `0469`, `0470`) lomi gumb sredi besede (»GESCHÄFTSRE / ISE«), zato je DE naslovna slika
+ostala `30-de-aktivna-pot` — do 11. 10. zvečer, glej spodaj.
+
+### Nemška aktivna pot in zemljevidi (`79-*` … `82-*`, 11. 10. 2026 zvečer)
+
+Vir: `Downloads\Screen shot Android DE in maps` (Redmi, 11. 10.), WebP 760 px.
+
+| posnetek | vir | kaj |
+| --- | --- | --- |
+| `79` DE | `…20-34-01` | naslovna slika DE: aktivna pot, carbon, gumb FAHRT BEENDEN — nadomešča `30` |
+| `80` DE, `81` EN, `82` SL | `…20-34-25`, `…20-35-06`, `…20-35-31` | zemljevid službene poti Koper–Ljubljana–Celje — nadomešča `32` (DE) in `02` (EN, SL) |
+
+Na zemljevidih so le mesta in žebljički postankov, brez naslovov in imen strank. Neuporabljen:
+`…20-33-43` (ista nemška pot, svetlo ozadje). `02`, `30` in `32` so odstranjeni.
 
 **Zavrnjeni posnetki** — vsebujejo prava imena podjetij in zaseben naslov, ki
 niso bili prečiščeni; če jih kdaj dodajamo, jih je treba najprej prepisati po

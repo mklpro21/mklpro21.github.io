@@ -107,10 +107,21 @@ Vir: `Downloads/Screen shots IOS new build 3 langage` (opis v `README.md` → »
 - EN seznam vozil `03` → `74`.
 - Odstranjeni neuporabljeni: `01`, `03`, `06`, `07`, `08`, `17`, `20`, `21`, `23`, `27`.
 
-Še odprto: DE naslovna slika (napaka v aplikaciji). Par Pred / Po za Pic Edit je dodan (`76`, `77`), ob njem rezultat v LPT (`78`).
+~~Še odprto: DE naslovna slika (napaka v aplikaciji).~~ Rešeno zvečer na Windows — glej spodaj. Par Pred / Po za Pic Edit je dodan (`76`, `77`), ob njem rezultat v LPT (`78`).
 
 Odgovori uporabnika (11. 10.): Pic Edit 1.3.0 deluje na iOS; Android prijava = vpis med
 preizkuševalce in vabilo (osnutek pripravi agent, uporabnik potrdi); Google Assistant še ni,
 v načrtu; Android Auto začne in konča pot (z rahlim zamikom, preizkušeno). V `podpora/`
 dodana vprašanja »Kako se prijavim na preizkus?«, »CarPlay in Android Auto« in opomba, da
 glasovnih ukazov na Androidu še ni — v vseh treh jezikih.
+
+---
+
+## Nadaljevanje na Windows (11. 10. 2026 zvečer) — nemška aktivna pot, zemljevidi v treh jezikih
+
+Vir: `Downloads\Screen shot Android DE in maps` (opis v `README.md` → »Nemška aktivna pot in zemljevidi«).
+
+- **DE naslovna slika** `30` → `79`: aktivna pot z gumbom FAHRT BEENDEN (Android, carbon) —
+  zadnja odprta točka posnetkov je s tem zaprta.
+- **Zemljevid v jeziku strani**: EN `81`, SL `82` (obe prej `02`), DE `80` (prej Applov `32`).
+- Odstranjeni: `02`, `30`, `32`.
