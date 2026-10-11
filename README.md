@@ -143,7 +143,7 @@ v avtu so fotografije). Pretvorjeni s `cwebp -q 80` (`brew install webp`; `sips`
 | `68` EN, `69` SL, `70` DE | `IMG_0385`, `0401`, `0396` | živa aktivnost v CarPlay |
 | `71` EN, `72` SL, `73` DE | `IMG_0404`, `0417`, `0409` | Android Auto med potjo |
 | `74` EN | `IMG_0426` | seznam vozil (`LJ 01 LPT`, `LJ 02 LPT`) |
-| `76`, `77` | `IMG_0471`, `0473` (mapa `LPT pic screen shot`) | Pic Edit na iPhonu, izrez platna: pred (ozadje, zabrisana tablica) / po (izrezan, rožnat žarek, prekrivna tablica `LJ 02 LPT`) — v razdelku 01 vseh treh `pic-edit/` |
+| `76`, `77` | `IMG_0471`, `0473` (mapa `LPT pic screen shot`) | Pic Edit na iPhonu, izrez platna: pred (ozadje, zabrisana tablica) / po (izrezan, vijoličen žarek kot v `78`, prekrivna tablica `LJ 02 LPT`; posnetek iz klepeta 11. 10.) — v razdelku 01 vseh treh `pic-edit/` |
 | `78` | posnetek iz klepeta 11. 10. (iPhone, EN) | isti Ford v Lazy Pro Trip: nadzorna plošča z modrim žarkom, `LJ 02 LPT` — ob paru Pred / Po |
 
 Tablica na fotografiji avta je v aplikaciji že zakrita (vidi se le `LJ`). **Zavrnjen:**
