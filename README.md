@@ -164,6 +164,20 @@ Vir: `Downloads\Screen shot Android DE in maps` (Redmi, 11. 10.), WebP 760 px.
 Na zemljevidih so le mesta in žebljički postankov, brez naslovov in imen strank. Neuporabljen:
 `…20-33-43` (ista nemška pot, svetlo ozadje). `02`, `30` in `32` so odstranjeni.
 
+### Začetek poti (`84-*` … `86-*`, 12. 10. 2026)
+
+Vir: `Downloads\Start trip screen shots` (Redmi, 12. 10.), WebP 760 px.
+
+| posnetek | vir | kaj |
+| --- | --- | --- |
+| `84` SL | `…13-13-50` | vprašanje »Začetek službene poti« (svetlo ozadje) — nadomešča `13-carplay-poziv` |
+| `85` EN | `…15-44-03` | »Start business trip« (carbon) — nadomešča `14b-ocr-stevca-en` |
+| `86` DE | `…15-45-14` | »Geschäftsfahrt starten« (carbon) — nadomešča `31-de-ocr-stevca` |
+
+Vsi trije so prva slika razdelka 01 (korak 1 »Sedete v avto«). Tablica je prekrivna
+`LJ 01 LPT`; vidno je ime Bluetooth naprave avta `My Skoda 8924`. `13`, `14b` in `31` so
+odstranjeni (SL ohrani `14-ocr-stevca`).
+
 **Zavrnjeni posnetki** — vsebujejo prava imena podjetij in zaseben naslov, ki
 niso bili prečiščeni; če jih kdaj dodajamo, jih je treba najprej prepisati po
 tabeli zgoraj:

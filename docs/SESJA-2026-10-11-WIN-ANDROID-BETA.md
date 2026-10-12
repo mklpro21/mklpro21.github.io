@@ -126,3 +126,16 @@ Vir: `Downloads\Screen shot Android DE in maps` (opis v `README.md` → »Nemšk
 - **Zemljevid v jeziku strani**: EN `81`, SL `82` (obe prej `02`), DE `80` (prej Applov `32`).
 - Odstranjeni: `02`, `30`, `32`.
 - **DE izbirnik jezika** `19` → `83` (»Sprache«, Deutsch izbran; posnetek s telefona prek adb).
+
+---
+
+## Nadaljevanje na Windows (12. 10. 2026) — začetek poti v treh jezikih
+
+Vir: `Downloads\Start trip screen shots` (opis v `README.md` → »Začetek poti«).
+
+- Prva slika razdelka 01 je v vseh treh jezikih vprašanje ob povezavi z avtom (Da / Ne,
+  stanje števca, gumb za fotografijo števca): SL `13` → `84`, EN `14b` → `85`, DE `31` → `86`.
+- EN in DE sta s tem izgubila posnetek kamere na števcu; gumb za fotografijo je na novem
+  posnetku, korak 1 ga opisuje. Napisa pod sliko: »Asked the moment the car connects«,
+  »Die Frage, sobald sich das Auto verbindet«.
+- Odstranjeni: `13`, `14b`, `31`.
