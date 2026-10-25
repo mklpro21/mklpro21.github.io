@@ -1,7 +1,7 @@
 # Seja 25. 10. 2026 (Windows) — politika zasebnosti LPT Pic Edit za 1.3 (osnutek, EN/SL/DE)
 
-Veja **`pic-edit-zasebnost`** (z `main`, neodvisna od veje `pogoji-uporabe`) — **ni potisnjeno,
-ni objavljeno**. Objava po odobritvi uporabnika.
+Veja **`pic-edit-zasebnost`** (z `main`, neodvisna od veje `pogoji-uporabe`). **Objavljeno 25. 10. 2026**
+— po odobritvi uporabnika zlito v `main` (hitri spoj) in potisnjeno. Pogoji LPT (`pogoji-uporabe`) še čakajo.
 
 Izhodišče: analiza vrzeli Pic Edit (`lpt-pic-edit/docs/SESJA-2026-10-25-WIN-VARNOST-PRAVNO.md`,
 točka **B1**): noga strani `/pic-edit/` je kazala na politiko **LPT**, ki Pic Edit ne omenja, in v
