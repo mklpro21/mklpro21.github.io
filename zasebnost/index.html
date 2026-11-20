@@ -31,7 +31,7 @@
 <main class="wrap doc">
 <h1 id="en">Privacy Policy</h1>
 <p class="lede">Lazy Pro Trip — business mileage and trip logging</p>
-<p class="updated">Last updated: 4 October 2026</p>
+<p class="updated">Last updated: 20 November 2026</p>
 <div class="lang"><a href="#sl">Slovenščina ↓</a> · <a href="#de">Deutsch ↓</a> · <a href="/podpora/">Support</a></div>
 
 <h2>In short</h2>
@@ -63,6 +63,7 @@
 <h3>External services</h3>
 <ul>
   <li><strong>Addresses.</strong> To turn coordinates into an address, the coordinates of a stop, and of where a trip starts and ends, are sent to the system geocoding service (Apple on iPhone, Google on Android) and, on both, to Google's Places service, which looks up the name of a business at that spot. Coordinates are sent, not your identity.</li>
+  <li><strong>Road distance.</strong> If the GPS signal drops out during a trip for at least a minute (for example, when the phone turns satellite positioning off after a long stop), the straight line across the gap is shorter than the road. When the trip ends, the app then sends the coordinates of the last position before the gap and the first one after it — and the direction of travel, if the car was moving — to Google's Routes service, which returns the driving distance between them. If the road is longer than what was measured, the difference is added to the trip's mileage. This happens only for such gaps (at most 10 per trip), not for the whole route; coordinates are sent, not your identity.</li>
   <li><strong>Maps.</strong> Displaying the map loads data from the map provider.</li>
   <li><strong>Dictation.</strong> You may dictate the purpose of a stop. Speech recognition is performed by the device's system service. <strong>If the chosen language is not installed for offline use, the recording is processed on the system provider's servers</strong> (on iPhone Apple's, on Android Google's). The app does not keep recordings.</li>
   <li><strong>Cloud backup — optional.</strong> It starts only once you sign in. Trips, vehicles, costs, clients, settings and the usage counter are then stored in a Supabase database in <strong>Frankfurt (eu-central-1, European Union)</strong>, tied to your account and accessible only to you. Whether a trip's GPS track is included depends on your plan: the basic backup contains no GPS tracks, the full backup (Pro) does. A track uploaded earlier stays in the cloud until you delete your account.</li>
@@ -117,7 +118,7 @@
 <div lang="sl">
 <h1 style="margin-top:2.5rem">Pravilnik o zasebnosti</h1>
 <p class="lede">Lazy Pro Trip — aplikacija za beleženje službenih poti in kilometrine</p>
-<p class="updated">Zadnja sprememba: 4. oktober 2026</p>
+<p class="updated">Zadnja sprememba: 20. november 2026</p>
 
 <h2>Na kratko</h2>
 <div class="box">
@@ -148,6 +149,7 @@
 <h3>Zunanje storitve</h3>
 <ul>
   <li><strong>Naslovi.</strong> Za pretvorbo koordinat v naslov se koordinate postanka ter začetka in konca poti pošljejo sistemski storitvi za geokodiranje (na iPhonu Apple, na Androidu Google), na obeh pa tudi Googlovi storitvi Places, ki poišče ime podjetja na tem mestu. Poslane so koordinate, ne vaša identiteta.</li>
+  <li><strong>Cestna razdalja.</strong> Če GPS signal med potjo izgine za vsaj minuto (na primer, ko telefon po dolgem postanku izklopi satelitsko določanje položaja), je ravna črta čez vrzel krajša od ceste. Ob koncu poti zato aplikacija pošlje koordinate zadnjega položaja pred vrzeljo in prvega po njej — in smer vožnje, če se je avto premikal — Googlovi storitvi Routes, ki vrne cestno razdaljo med njima. Če je cesta daljša od izmerjenega, se razlika prišteje kilometrom poti. To velja samo za take vrzeli (največ 10 na pot), ne za celotno pot; poslane so koordinate, ne vaša identiteta.</li>
   <li><strong>Zemljevid.</strong> Prikaz zemljevida naloži podatke pri ponudniku zemljevidov.</li>
   <li><strong>Diktiranje.</strong> Namen postanka lahko narekujete. Prepoznavo govora opravi sistemska storitev naprave. <strong>Če izbrani jezik na napravi ni nameščen za delovanje brez povezave, posnetek obdela strežnik ponudnika sistemske storitve</strong> (na iPhonu Apple, na Androidu Google). Aplikacija posnetkov ne hrani.</li>
   <li><strong>Oblačna kopija — izbirna.</strong> Vklopi se šele s prijavo. Takrat se poti, vozila, stroški, stranke, nastavitve in števec uporabe shranijo v bazo Supabase v <strong>Frankfurtu (eu-central-1, Evropska unija)</strong>, vezani na vaš račun in dostopni samo vam. Ali kopija vsebuje tudi GPS sled poti, je odvisno od paketa: osnovna kopija je brez GPS sledi, polna kopija (Pro) jih vsebuje. Sled, ki je že naložena, ostane v oblaku, dokler ne izbrišete računa.</li>
@@ -203,7 +205,7 @@
 <div lang="de">
 <h1 style="margin-top:2.5rem">Datenschutzerklärung</h1>
 <p class="lede">Lazy Pro Trip — App für das Fahrtenbuch beruflicher Fahrten und Kilometer</p>
-<p class="updated">Zuletzt geändert: 4. Oktober 2026</p>
+<p class="updated">Zuletzt geändert: 20. November 2026</p>
 
 <h2>Kurz gefasst</h2>
 <div class="box">
@@ -234,6 +236,7 @@
 <h3>Externe Dienste</h3>
 <ul>
   <li><strong>Adressen.</strong> Um Koordinaten in eine Adresse umzuwandeln, werden die Koordinaten eines Stopps sowie von Beginn und Ende einer Fahrt an den Geokodierungsdienst des Systems gesendet (auf dem iPhone Apple, auf Android Google) und auf beiden zusätzlich an den Google-Dienst Places, der den Namen eines Unternehmens an dieser Stelle sucht. Gesendet werden Koordinaten, nicht Ihre Identität.</li>
+  <li><strong>Straßenentfernung.</strong> Fällt das GPS-Signal während einer Fahrt für mindestens eine Minute aus (zum Beispiel, wenn das Telefon nach einem langen Stopp die Satellitenortung abschaltet), ist die gerade Linie über die Lücke kürzer als die Straße. Am Ende der Fahrt sendet die App deshalb die Koordinaten der letzten Position vor der Lücke und der ersten danach — und die Fahrtrichtung, wenn das Auto in Bewegung war — an den Google-Dienst Routes, der die Fahrstrecke zwischen ihnen zurückgibt. Ist die Straße länger als gemessen, wird die Differenz zu den Kilometern der Fahrt addiert. Das geschieht nur für solche Lücken (höchstens 10 pro Fahrt), nicht für die ganze Strecke; gesendet werden Koordinaten, nicht Ihre Identität.</li>
   <li><strong>Karte.</strong> Die Anzeige der Karte lädt Daten beim Kartenanbieter.</li>
   <li><strong>Diktieren.</strong> Den Zweck eines Stopps können Sie diktieren. Die Spracherkennung übernimmt der Systemdienst des Geräts. <strong>Ist die gewählte Sprache auf dem Gerät nicht für die Offline-Nutzung installiert, wird die Aufnahme auf den Servern des Systemdienst-Anbieters verarbeitet</strong> (auf dem iPhone Apple, auf Android Google). Die App bewahrt keine Aufnahmen auf.</li>
   <li><strong>Cloud-Backup — freiwillig.</strong> Es beginnt erst mit der Anmeldung. Dann werden Fahrten, Fahrzeuge, Kosten, Kunden, Einstellungen und der Nutzungszähler in einer Supabase-Datenbank in <strong>Frankfurt (eu-central-1, Europäische Union)</strong> gespeichert, an Ihr Konto gebunden und nur für Sie zugänglich. Ob die GPS-Spur einer Fahrt dabei ist, hängt von Ihrem Plan ab: Das Basis-Backup enthält keine GPS-Spuren, das vollständige Backup (Pro) schon. Eine bereits hochgeladene Spur bleibt in der Cloud, bis Sie Ihr Konto löschen.</li>
