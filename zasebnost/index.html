@@ -31,7 +31,7 @@
 <main class="wrap doc">
 <h1 id="en">Privacy Policy</h1>
 <p class="lede">Lazy Pro Trip — business mileage and trip logging</p>
-<p class="updated">Last updated: 20 November 2026</p>
+<p class="updated">Last updated: 22 November 2026</p>
 <div class="lang"><a href="#sl">Slovenščina ↓</a> · <a href="#de">Deutsch ↓</a> · <a href="/podpora/">Support</a></div>
 
 <h2>In short</h2>
@@ -49,7 +49,7 @@
   <li><strong>Vehicles</strong> — name, model, registration plate, odometer reading, and a photo if you add one.</li>
   <li><strong>Costs, clients and report settings</strong> (for example company details and the address reports are sent to), if you enter them.</li>
   <li><strong>Photographs</strong> of the odometer and receipts, if you take them.</li>
-  <li><strong>Usage counter</strong> — for each month the app counts the calendar days on which you drove and the official exports you made. This determines what the free plan includes. The count is kept on the device (and in your cloud backup if you are signed in).</li>
+  <li><strong>Usage counter</strong> — for each month the app counts trip days (each trip uses one for every calendar day it covers, so two trips on the same day use two; a part after midnight shorter than 3 hours is not counted) and the official exports you made. This determines what the free plan includes. The count is kept on the device (and in your cloud backup if you are signed in).</li>
 </ul>
 
 <h2>Where data is processed</h2>
@@ -69,7 +69,7 @@
   <li><strong>Cloud backup — optional.</strong> It starts only once you sign in. Trips, vehicles, costs, clients, settings and the usage counter are then stored in a Supabase database in <strong>Frankfurt (eu-central-1, European Union)</strong>, tied to your account and accessible only to you. Whether a trip's GPS track is included depends on your plan: the basic backup contains no GPS tracks, the full backup (Pro) does. A track uploaded earlier stays in the cloud until you delete your account.</li>
   <li><strong>Signing in.</strong> With <strong>email and password</strong> we store your email address; the sign-in service (Supabase Auth) keeps the password only as a secure hash. With <strong>Google</strong> we receive your email address and the basic profile Google shares (name and profile picture). With <strong>Apple</strong> we receive a user identifier and — if you choose — your email address; Apple lets you hide it, in which case we receive a relay address.</li>
   <li><strong>Subscriptions and purchases.</strong> Payment is handled entirely by the App Store or Google Play; we never see your card or payment details. To know whether you have Pro, the app uses <strong>RevenueCat</strong> (RevenueCat, Inc., USA) as our processor. RevenueCat receives a random app user ID — or, once you sign in, your account ID, so that Pro follows you to another device — your purchase and subscription history from the store, and technical details such as platform, app and system version and the store country. It receives no trips, locations or vehicles. Transfers to the USA are covered by the EU Standard Contractual Clauses in RevenueCat's data processing agreement.</li>
-  <li><strong>Anonymous monthly count.</strong> Once a month the app sends one row about the previous month: the number of days with trips, the number of trips and how many of them were beyond the free limit, the day of the month the limit was reached, the number of exports, the platform, the app version, whether you had Pro and whether paid plans were active. The row carries <strong>no identifier, no location and no email address</strong> and is sent without your sign-in, so it cannot be linked to you or to your other months. We use it only to set the free limit fairly. It is stored in the same database in Frankfurt.</li>
+  <li><strong>Anonymous monthly count.</strong> Once a month the app sends one row about the previous month: the number of trip days, the number of trips and how many of them were beyond the free limit, the day of the month the limit was reached, the number of exports, the platform, the app version, whether you had Pro and whether paid plans were active. The row carries <strong>no identifier, no location and no email address</strong> and is sent without your sign-in, so it cannot be linked to you or to your other months. We use it only to set the free limit fairly. It is stored in the same database in Frankfurt.</li>
   <li><strong>App settings from our server.</strong> The app reads a few public on/off switches from our server (for example, whether paid plans are active). The request contains no personal data.</li>
 </ul>
 
@@ -118,7 +118,7 @@
 <div lang="sl">
 <h1 style="margin-top:2.5rem">Pravilnik o zasebnosti</h1>
 <p class="lede">Lazy Pro Trip — aplikacija za beleženje službenih poti in kilometrine</p>
-<p class="updated">Zadnja sprememba: 20. november 2026</p>
+<p class="updated">Zadnja sprememba: 22. november 2026</p>
 
 <h2>Na kratko</h2>
 <div class="box">
@@ -135,7 +135,7 @@
   <li><strong>Vozila</strong> — ime, model, registrska oznaka, stanje števca in fotografija, če jo dodate.</li>
   <li><strong>Stroški, stranke in nastavitve poročil</strong> (na primer podatki podjetja in naslov, na katerega gredo poročila), če jih vnesete.</li>
   <li><strong>Fotografije</strong> števca in računov, če jih posnamete.</li>
-  <li><strong>Števec uporabe</strong> — aplikacija za vsak mesec šteje koledarske dni, v katerih ste vozili, in uradne izvoze. Po njem se določi, kaj vključuje brezplačni paket. Štetje se hrani na napravi (in v oblačni kopiji, če ste prijavljeni).</li>
+  <li><strong>Števec uporabe</strong> — aplikacija za vsak mesec šteje dneve poti (vsaka pot porabi en dan za vsak koledarski dan, ki ga pokrije, zato dve poti na isti dan porabita dva; del po polnoči, krajši od 3 ur, se ne šteje) in uradne izvoze. Po njem se določi, kaj vključuje brezplačni paket. Štetje se hrani na napravi (in v oblačni kopiji, če ste prijavljeni).</li>
 </ul>
 
 <h2>Kje se podatki obdelujejo</h2>
@@ -155,7 +155,7 @@
   <li><strong>Oblačna kopija — izbirna.</strong> Vklopi se šele s prijavo. Takrat se poti, vozila, stroški, stranke, nastavitve in števec uporabe shranijo v bazo Supabase v <strong>Frankfurtu (eu-central-1, Evropska unija)</strong>, vezani na vaš račun in dostopni samo vam. Ali kopija vsebuje tudi GPS sled poti, je odvisno od paketa: osnovna kopija je brez GPS sledi, polna kopija (Pro) jih vsebuje. Sled, ki je že naložena, ostane v oblaku, dokler ne izbrišete računa.</li>
   <li><strong>Prijava.</strong> Pri prijavi z <strong>e-naslovom in geslom</strong> hranimo vaš e-naslov; geslo hrani storitev za prijavo (Supabase Auth) samo kot varno zgoščeno vrednost. Pri prijavi z <strong>Googlom</strong> prejmemo e-naslov in osnovni profil, ki ga deli Google (ime in profilno sliko). Pri prijavi z <strong>Applom</strong> prejmemo identifikator uporabnika in — če tako izberete — e-naslov; Apple vam omogoča skrivanje e-naslova, v tem primeru prejmemo posredovalni naslov.</li>
   <li><strong>Naročnine in nakupi.</strong> Plačilo v celoti opravi App Store ali Google Play; podatkov o kartici ali plačilu nikoli ne vidimo. Da aplikacija ve, ali imate Pro, kot našega obdelovalca uporablja <strong>RevenueCat</strong> (RevenueCat, Inc., ZDA). RevenueCat prejme naključni identifikator uporabnika aplikacije — ali, ko se prijavite, identifikator vašega računa, da vas Pro spremlja tudi na drugo napravo — zgodovino nakupov in naročnin iz trgovine ter tehnične podatke, kot so platforma, različica aplikacije in sistema ter država trgovine. Poti, lokacij ali vozil ne prejme. Prenos v ZDA je zavarovan s standardnimi pogodbenimi klavzulami EU v pogodbi o obdelavi podatkov z RevenueCat.</li>
-  <li><strong>Anonimno mesečno štetje.</strong> Enkrat na mesec aplikacija pošlje eno vrstico o preteklem mesecu: število dni s potmi, število poti in koliko jih je bilo nad brezplačno mejo, dan v mesecu, ko je bila meja dosežena, število izvozov, platformo, različico aplikacije, ali ste imeli Pro in ali so bili plačljivi paketi vklopljeni. Vrstica <strong>nima identifikatorja, lokacije ali e-naslova</strong> in se pošlje brez vaše prijave, zato je ni mogoče povezati z vami ali z vašimi drugimi meseci. Uporabimo jo samo za pošteno določitev brezplačne meje. Shrani se v isto bazo v Frankfurtu.</li>
+  <li><strong>Anonimno mesečno štetje.</strong> Enkrat na mesec aplikacija pošlje eno vrstico o preteklem mesecu: število dni poti, število poti in koliko jih je bilo nad brezplačno mejo, dan v mesecu, ko je bila meja dosežena, število izvozov, platformo, različico aplikacije, ali ste imeli Pro in ali so bili plačljivi paketi vklopljeni. Vrstica <strong>nima identifikatorja, lokacije ali e-naslova</strong> in se pošlje brez vaše prijave, zato je ni mogoče povezati z vami ali z vašimi drugimi meseci. Uporabimo jo samo za pošteno določitev brezplačne meje. Shrani se v isto bazo v Frankfurtu.</li>
   <li><strong>Nastavitve aplikacije s strežnika.</strong> Aplikacija s strežnika prebere nekaj javnih stikal (na primer, ali so plačljivi paketi vklopljeni). Zahteva ne vsebuje osebnih podatkov.</li>
 </ul>
 
@@ -205,7 +205,7 @@
 <div lang="de">
 <h1 style="margin-top:2.5rem">Datenschutzerklärung</h1>
 <p class="lede">Lazy Pro Trip — App für das Fahrtenbuch beruflicher Fahrten und Kilometer</p>
-<p class="updated">Zuletzt geändert: 20. November 2026</p>
+<p class="updated">Zuletzt geändert: 22. November 2026</p>
 
 <h2>Kurz gefasst</h2>
 <div class="box">
@@ -222,7 +222,7 @@
   <li><strong>Fahrzeuge</strong> — Name, Modell, Kennzeichen, Tachostand und ein Foto, sofern Sie eines hinzufügen.</li>
   <li><strong>Kosten, Kunden und Berichtseinstellungen</strong> (zum Beispiel Firmenangaben und die Adresse, an die Berichte gehen), sofern Sie sie eingeben.</li>
   <li><strong>Fotos</strong> des Tachos und von Belegen, sofern Sie sie aufnehmen.</li>
-  <li><strong>Nutzungszähler</strong> — die App zählt für jeden Monat die Kalendertage, an denen Sie gefahren sind, und die offiziellen Exporte. Danach richtet sich, was der kostenlose Plan umfasst. Die Zählung liegt auf dem Gerät (und in Ihrem Cloud-Backup, wenn Sie angemeldet sind).</li>
+  <li><strong>Nutzungszähler</strong> — die App zählt für jeden Monat die Fahrtage (jede Fahrt verbraucht einen für jeden Kalendertag, den sie umfasst, zwei Fahrten am selben Tag also zwei; ein Teil nach Mitternacht, der kürzer als 3 Stunden ist, zählt nicht) und die offiziellen Exporte. Danach richtet sich, was der kostenlose Plan umfasst. Die Zählung liegt auf dem Gerät (und in Ihrem Cloud-Backup, wenn Sie angemeldet sind).</li>
 </ul>
 
 <h2>Wo die Daten verarbeitet werden</h2>
@@ -242,7 +242,7 @@
   <li><strong>Cloud-Backup — freiwillig.</strong> Es beginnt erst mit der Anmeldung. Dann werden Fahrten, Fahrzeuge, Kosten, Kunden, Einstellungen und der Nutzungszähler in einer Supabase-Datenbank in <strong>Frankfurt (eu-central-1, Europäische Union)</strong> gespeichert, an Ihr Konto gebunden und nur für Sie zugänglich. Ob die GPS-Spur einer Fahrt dabei ist, hängt von Ihrem Plan ab: Das Basis-Backup enthält keine GPS-Spuren, das vollständige Backup (Pro) schon. Eine bereits hochgeladene Spur bleibt in der Cloud, bis Sie Ihr Konto löschen.</li>
   <li><strong>Anmeldung.</strong> Bei <strong>E-Mail und Passwort</strong> speichern wir Ihre E-Mail-Adresse; der Anmeldedienst (Supabase Auth) bewahrt das Passwort nur als sicheren Hashwert auf. Bei <strong>Google</strong> erhalten wir Ihre E-Mail-Adresse und das Basisprofil, das Google teilt (Name und Profilbild). Bei <strong>Apple</strong> erhalten wir eine Benutzerkennung und — wenn Sie das so wählen — Ihre E-Mail-Adresse; Apple erlaubt Ihnen, sie zu verbergen, dann erhalten wir eine Weiterleitungsadresse.</li>
   <li><strong>Abonnements und Käufe.</strong> Die Zahlung wickelt vollständig der App Store oder Google Play ab; Karten- oder Zahlungsdaten sehen wir nie. Damit die App weiß, ob Sie Pro haben, nutzt sie <strong>RevenueCat</strong> (RevenueCat, Inc., USA) als unseren Auftragsverarbeiter. RevenueCat erhält eine zufällige App-Benutzerkennung — oder, sobald Sie sich anmelden, Ihre Konto-Kennung, damit Pro Sie auf ein anderes Gerät begleitet —, Ihre Kauf- und Abohistorie aus dem Store sowie technische Angaben wie Plattform, App- und Systemversion und das Land des Stores. Fahrten, Standorte oder Fahrzeuge erhält RevenueCat nicht. Übermittlungen in die USA sind durch die EU-Standardvertragsklauseln im Auftragsverarbeitungsvertrag von RevenueCat abgesichert.</li>
-  <li><strong>Anonyme Monatszählung.</strong> Einmal im Monat sendet die App eine Zeile zum Vormonat: die Zahl der Tage mit Fahrten, die Zahl der Fahrten und wie viele davon über der kostenlosen Grenze lagen, den Tag im Monat, an dem die Grenze erreicht wurde, die Zahl der Exporte, die Plattform, die App-Version, ob Sie Pro hatten und ob kostenpflichtige Pläne aktiv waren. Die Zeile enthält <strong>keine Kennung, keinen Standort und keine E-Mail-Adresse</strong> und wird ohne Ihre Anmeldung gesendet, sodass sie weder mit Ihnen noch mit Ihren anderen Monaten verknüpft werden kann. Wir nutzen sie nur, um die kostenlose Grenze fair festzulegen. Sie wird in derselben Datenbank in Frankfurt gespeichert.</li>
+  <li><strong>Anonyme Monatszählung.</strong> Einmal im Monat sendet die App eine Zeile zum Vormonat: die Zahl der Fahrtage, die Zahl der Fahrten und wie viele davon über der kostenlosen Grenze lagen, den Tag im Monat, an dem die Grenze erreicht wurde, die Zahl der Exporte, die Plattform, die App-Version, ob Sie Pro hatten und ob kostenpflichtige Pläne aktiv waren. Die Zeile enthält <strong>keine Kennung, keinen Standort und keine E-Mail-Adresse</strong> und wird ohne Ihre Anmeldung gesendet, sodass sie weder mit Ihnen noch mit Ihren anderen Monaten verknüpft werden kann. Wir nutzen sie nur, um die kostenlose Grenze fair festzulegen. Sie wird in derselben Datenbank in Frankfurt gespeichert.</li>
   <li><strong>App-Einstellungen von unserem Server.</strong> Die App liest einige öffentliche Schalter von unserem Server (zum Beispiel, ob kostenpflichtige Pläne aktiv sind). Die Anfrage enthält keine personenbezogenen Daten.</li>
 </ul>
 

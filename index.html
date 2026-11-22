@@ -236,25 +236,14 @@
       </div>
     </div>
     <div class="note" style="margin-top:64px">
-      <span class="tag">New · versions 4.41 and 4.42</span>
+      <span class="tag">New · versions 4.43 to 4.47</span>
       <h3>What changed recently</h3>
       <ul class="ticks" style="margin-top:22px">
-        <li><strong>Now on Android too.</strong> The beta is open on Android through Google Play,
-            with its own home-screen widget and Android Auto on the car display. <a href="#beta">Sign up</a></li>
-        <li><strong>Siri voice commands (iPhone).</strong> Start and end trips, check the distance
-            and keep the odometer in step with the car by voice — also with the phone locked
-            or in CarPlay. <a href="#siri">All commands</a></li>
-        <li><strong>Refresh the widget with one tap.</strong> During a trip the widget’s main
-            button is REFRESH — the distance updates without opening the app. The stop count
-            shows only the stops of the current trip.</li>
-        <li><strong>Delete your account from inside the app.</strong> Settings → Cloud Backup →
-            Delete account removes your cloud account together with every copy stored in it —
-            trips and their routes, vehicles, costs, clients and settings. What is on
-            your phone stays on your phone. <a href="/zasebnost/#delete-account">What exactly is deleted</a></li>
-        <li><strong>All your trips in one table, whenever you want.</strong> Settings →
-            Tracking diagnostics → Export raw data produces a single CSV file of every
-            completed trip, one row per day and vehicle: date, times, start and end
-            odometer, vehicle, notes. It is not the official report — it is your data, with no limit.</li>
+        <li><strong>Kilometres across GPS gaps.</strong> If the phone switches satellite positioning off during a long stop and the signal only returns after you have driven off, the app now adds the road distance across the gap when the trip ends — not the shorter straight line. <a href="/zasebnost/">What is sent</a></li>
+        <li><strong>A long stop no longer ends the trip.</strong> In a car without a Bluetooth connection the trip stays open through a long stop — for at least 6 hours and until the Auto-End Time (midnight by default) — so the drive back is part of the same trip.</li>
+        <li><strong>Keeps recording when Android closes the app.</strong> If Android shuts the app down in the background during a stop, tracking carries on without you having to open it again.</li>
+        <li><strong>Cleaner starts and stops.</strong> GPS wandering in the first minutes of a trip and around stops is filtered out more precisely. New vehicles start with no distance correction until you calibrate them against the odometer.</li>
+        <li><strong>Android Auto and the widget, redesigned.</strong> Android Auto shows the licence plate and vehicle name in large type with the odometer below; the home-screen widget gives the total odometer its own line, with the button in the middle and stops and Bluetooth underneath.</li>
       </ul>
     </div>
   </div>
